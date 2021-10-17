@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Screens/mainPage.dart';
 
 void main() {
   runApp(start());
@@ -15,7 +16,8 @@ class _startState extends State<start> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: mainPage,
+      debugShowCheckedModeBanner: false,
+      home: mainPage(),
     );
   }
 }
